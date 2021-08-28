@@ -15,6 +15,7 @@
 		4779C5A326DA01C8009F38FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4779C5A126DA01C8009F38FD /* LaunchScreen.storyboard */; };
 		4779C5AE26DA01C8009F38FD /* PokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4779C5AD26DA01C8009F38FD /* PokerTests.swift */; };
 		4779C5B926DA01C8009F38FD /* PokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4779C5B826DA01C8009F38FD /* PokerUITests.swift */; };
+		4779C5C826DA5346009F38FD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4779C5C726DA5346009F38FD /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4779C5B426DA01C8009F38FD /* PokerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4779C5B826DA01C8009F38FD /* PokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerUITests.swift; sourceTree = "<group>"; };
 		4779C5BA26DA01C8009F38FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4779C5C726DA5346009F38FD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				4779C59626DA01C7009F38FD /* AppDelegate.swift */,
 				4779C59826DA01C7009F38FD /* SceneDelegate.swift */,
 				4779C59A26DA01C7009F38FD /* ViewController.swift */,
+				4779C5C726DA5346009F38FD /* Card.swift */,
 				4779C59C26DA01C7009F38FD /* Main.storyboard */,
 				4779C59F26DA01C8009F38FD /* Assets.xcassets */,
 				4779C5A126DA01C8009F38FD /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				4779C59B26DA01C7009F38FD /* ViewController.swift in Sources */,
 				4779C59726DA01C7009F38FD /* AppDelegate.swift in Sources */,
 				4779C59926DA01C7009F38FD /* SceneDelegate.swift in Sources */,
+				4779C5C826DA5346009F38FD /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
