@@ -33,4 +33,8 @@ struct Card {
 
     let suit: Suit
     let rank: Rank
+
+    var notation: String {
+        return "3🖤"
+    }
 }
