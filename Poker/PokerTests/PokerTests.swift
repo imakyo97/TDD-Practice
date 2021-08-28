@@ -30,25 +30,12 @@ class PokerTests: XCTestCase {
         }
     }
 
-    func testInitializeCard() {
-        var card: Card
-
-        card = Card(suit: .heart, rank: .three)
-        XCTAssertEqual(card.suit, .heart)
-        XCTAssertEqual(card.rank, .
-                        three)
-
-        card = Card(suit: .spade, rank: .jack)
-        XCTAssertEqual(card.suit, .spade)
-        XCTAssertEqual(card.rank, .jack)
-    }
-
     func testCardNotation() {
         var card: Card
-        card = Card(suit: .heart, rank: .three)
+        card = Card(rank: .three, suit: .heart)
         XCTAssertEqual(card.notation, "3❤️")
 
-        card = Card(suit: .spade, rank: .jack)
+        card = Card(rank: .jack, suit: .spade)
         XCTAssertEqual(card.notation, "J♠️")
     }
 }
