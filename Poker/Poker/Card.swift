@@ -37,4 +37,8 @@ struct Card {
     var notation: String {
         return rank.rawValue + suit.rawValue
     }
+
+    func hasSomeSuit(_ card: Card) -> Bool {
+        return self.suit == card.suit
+    }
 }
