@@ -30,4 +30,11 @@ class PokerTests: XCTestCase {
         }
     }
 
+    func testInitializeCard() {
+        let card = Card(suit: .heart, rank: .three)
+        XCTAssertEqual(card.suit, .heart)
+        XCTAssertEqual(card.rank, .
+                        three)
+    }
+
 }
