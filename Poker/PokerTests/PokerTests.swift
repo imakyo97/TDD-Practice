@@ -44,7 +44,10 @@ class PokerTests: XCTestCase {
     }
 
     func testCardNotation() {
-        let card = Card(suit: .heart, rank: .three)
-        XCTAssertEqual(card.notation, "3🖤")
+        let card1 = Card(suit: .heart, rank: .three)
+        XCTAssertEqual(card1.notation, "3🖤")
+
+        let card2 = Card(suit: .spade, rank: .jack)
+        XCTAssertEqual(card2.notation, "J♠️")
     }
 }
