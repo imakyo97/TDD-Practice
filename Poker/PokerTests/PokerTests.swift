@@ -31,14 +31,15 @@ class PokerTests: XCTestCase {
     }
 
     func testInitializeCard() {
-        let card1 = Card(suit: .heart, rank: .three)
-        XCTAssertEqual(card1.suit, .heart)
-        XCTAssertEqual(card1.rank, .
+        var card: Card
+
+        card = Card(suit: .heart, rank: .three)
+        XCTAssertEqual(card.suit, .heart)
+        XCTAssertEqual(card.rank, .
                         three)
 
-        let card2 = Card(suit: .spade, rank: .jack)
-        XCTAssertEqual(card2.suit, .spade)
-        XCTAssertEqual(card2.rank, .jack)
+        card = Card(suit: .spade, rank: .jack)
+        XCTAssertEqual(card.suit, .spade)
+        XCTAssertEqual(card.rank, .jack)
     }
-
 }
