@@ -64,4 +64,52 @@ class PokerTests: XCTestCase {
         card2 = Card(rank: .eight, suit: .heart)
         XCTAssertFalse(card1.hasSameRank(card2))
     }
+
+    func testIsPair() {
+        var card1: Card
+        var card2: Card
+        var hand: Hand
+
+        card1 = Card(rank: .ace, suit: .heart)
+        card2 = Card(rank: .ace, suit: .diamond)
+        hand = Hand(card1: card1, card2: card2)
+        XCTAssertTrue(hand.isPair)
+
+        card1 = Card(rank: .ace, suit: .club)
+        card2 = Card(rank: .king, suit: .diamond)
+        hand = Hand(card1: card1, card2: card2)
+        XCTAssertFalse(hand.isPair)
+    }
+
+    func testIsFlush() {
+        var card1: Card
+        var card2: Card
+        var hand: Hand
+
+        card1 = Card(rank: .ace, suit: .club)
+        card2 = Card(rank: .king, suit: .club)
+        hand = Hand(card1: card1, card2: card2)
+        XCTAssertTrue(hand.isFlush)
+
+        card1 = Card(rank: .ace, suit: .club)
+        card2 = Card(rank: .king, suit: .diamond)
+        hand = Hand(card1: card1, card2: card2)
+        XCTAssertFalse(hand.isFlush)
+    }
+
+    func testIsHighCard() {
+        var card1: Card
+        var card2: Card
+        var hand: Hand
+
+        card1 = Card(rank: .ace, suit: .club)
+        card2 = Card(rank: .king, suit: .diamond)
+        hand = Hand(card1: card1, card2: card2)
+        XCTAssertTrue(hand.isHighCard)
+
+        card1 = Card(rank: .ace, suit: .heart)
+        card2 = Card(rank: .five, suit: .heart)
+        hand = Hand(card1: card1, card2: card2)
+        XCTAssertFalse(hand.isHighCard)
+    }
 }
